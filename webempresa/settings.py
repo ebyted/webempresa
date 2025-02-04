@@ -154,8 +154,8 @@ EMAIL_HOST_PASSWORD = '0a34e431e11014'
 EMAIL_PORT = '2525'
 
 
-STATIC_URL = '/static/'
-STATICFILES_DIRS = [BASE_DIR / "staticfiles"]
+STATIC_URL = '/core/static/'
+STATICFILES_DIRS = [BASE_DIR / "core/static"]
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 print(STATIC_URL)
