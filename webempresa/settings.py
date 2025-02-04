@@ -152,10 +152,11 @@ EMAIL_HOST = 'smtp.mailtrap.io'
 EMAIL_HOST_USER = 'e15b227a5f8221'
 EMAIL_HOST_PASSWORD = '0a34e431e11014'
 EMAIL_PORT = '2525'
-print(BASE_DIR)
+
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static')
-]
+STATICFILES_DIRS = [BASE_DIR / "staticfiles"]
+
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+print(STATIC_URL)
+print(STATICFILES_DIRS)
