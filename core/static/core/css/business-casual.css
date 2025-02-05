@@ -1,9 +1,10 @@
 body {
-  font-family: 'Lora';
-  background: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("../img/bg.jpg");
+  font-family: 'Open Sans', sans-serif; /* Cambio de fuente a una más moderna */
+  background: linear-gradient(rgba(34, 40, 49, 0.85), rgba(34, 40, 49, 0.85)), url("../img/bg.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+  color: #f7f7f7; /* Color de texto principal más claro */
 }
 
 h1,
@@ -12,15 +13,17 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Raleway';
+  font-family: 'Montserrat', sans-serif; /* Cambio de fuente para títulos */
+  color: #00adb5; /* Color turquesa para títulos */
 }
 
 p {
   line-height: 1.75;
+  color: #eeeeee; /* Color de texto secundario */
 }
 
 .text-faded {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(247, 247, 247, 0.5); /* Texto desvanecido más claro */
 }
 
 .site-heading {
@@ -28,19 +31,21 @@ p {
   margin-bottom: 5rem;
   text-transform: uppercase;
   line-height: 1;
-  font-family: 'Raleway';
+  font-family: 'Montserrat', sans-serif;
 }
 
 .site-heading .site-heading-upper {
   display: block;
   font-size: 2rem;
   font-weight: 800;
+  color: #00adb5; /* Color turquesa */
 }
 
 .site-heading .site-heading-lower {
   font-size: 5rem;
   font-weight: 100;
   line-height: 4rem;
+  color: #f7f7f7; /* Color blanco */
 }
 
 .page-section {
@@ -56,45 +61,46 @@ p {
   display: block;
   font-size: 1rem;
   font-weight: 800;
-  padding-bottom:.5rem;
-
+  padding-bottom: .5rem;
+  color: #00adb5; /* Color turquesa */
 }
 
 .section-heading .section-heading-lower {
   display: block;
   font-size: 3rem;
   font-weight: 100;
+  color: #f7f7f7; /* Color blanco */
 }
-
 
 .section-heading .section-heading-under {
   display: block;
   font-size: 1rem;
   text-transform: none;
   font-weight: 300;
-  margin-top:.5rem;
+  margin-top: .5rem;
+  color: #eeeeee; /* Color gris claro */
 }
 
 .bg-faded {
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(34, 40, 49, 0.9); /* Fondo oscuro semi-transparente */
 }
 
 #mainNav {
-  background-color: rgba(47, 23, 15, 0.9);
-  font-family: 'Raleway';
+  background-color: rgba(34, 40, 49, 0.9); /* Fondo oscuro para la barra de navegación */
+  font-family: 'Montserrat', sans-serif;
 }
 
 #mainNav .navbar-brand {
-  color: #e6a756;
+  color: #00adb5; /* Color turquesa para la marca */
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(247, 247, 247, 0.7); /* Color de enlace semi-transparente */
   font-weight: 800;
 }
 
 #mainNav .navbar-nav .nav-item.active .nav-link {
-  color: #e6a756;
+  color: #00adb5; /* Color turquesa para enlace activo */
 }
 
 @media (min-width: 992px) {
@@ -102,10 +108,10 @@ p {
     font-size: 0.9rem;
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(247, 247, 247, 0.4); /* Color de enlace al pasar el mouse */
   }
   #mainNav .navbar-nav .nav-item.active .nav-link:hover {
-    color: #e6a756;
+    color: #00adb5; /* Color turquesa para enlace activo al pasar el mouse */
   }
 }
 
@@ -116,6 +122,13 @@ p {
   padding-bottom: 1.5rem;
   padding-left: 2rem;
   padding-right: 2rem;
+  background-color: #00adb5; /* Color turquesa para botones */
+  border-color: #00adb5;
+}
+
+.btn-xl:hover {
+  background-color: #00959c; /* Color turquesa más oscuro al pasar el mouse */
+  border-color: #00959c;
 }
 
 .intro {
@@ -150,14 +163,14 @@ p {
 .cta {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: rgba(230, 167, 86, 0.9);
+  background-color: rgba(0, 173, 181, 0.9); /* Fondo turquesa semi-transparente */
 }
 
 .cta .cta-inner {
   position: relative;
   padding: 3rem;
   margin: 0.5rem;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(247, 247, 247, 0.9); /* Fondo blanco semi-transparente */
 }
 
 .cta .cta-inner:before {
@@ -168,14 +181,14 @@ p {
   bottom: -0.5rem;
   left: -0.5rem;
   right: -0.5rem;
-  border: 0.25rem solid rgba(255, 255, 255, 0.85);
+  border: 0.25rem solid rgba(247, 247, 247, 0.9); /* Borde blanco semi-transparente */
 }
 
 .cta .cta-innerv {
   position: relative;
   padding: 3rem;
   margin: 0.5rem;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(247, 247, 247, 0.9); /* Fondo blanco semi-transparente */
 }
 
 @media (min-width: 992px) {
@@ -214,7 +227,7 @@ p {
 }
 
 .list-hours .list-hours-item {
-  border-bottom: 1px solid rgba(230, 167, 86, 0.5);
+  border-bottom: 1px solid rgba(0, 173, 181, 0.5); /* Borde turquesa semi-transparente */
   padding-bottom: .25rem;
   margin-bottom: 1rem;
   font-style: italic;
@@ -222,7 +235,7 @@ p {
 
 .list-hours .list-hours-item.today {
   font-weight: bold;
-  color: #e6a756;
+  color: #00adb5; /* Color turquesa para el día actual */
 }
 
 @media (min-width: 992px) {
@@ -234,18 +247,19 @@ p {
 
 .address strong {
   font-size: 1.2rem;
+  color: #00adb5; /* Color turquesa para texto fuerte */
 }
 
 .footer {
-  background-color: rgba(47, 23, 15, 0.9);
+  background-color: rgba(34, 40, 49, 0.9); /* Fondo oscuro para el pie de página */
 }
 
 .text-primary {
-  color: #e6a756 !important;
+  color: #00adb5 !important; /* Color turquesa para texto primario */
 }
 
 .bg-primary {
-  background-color: #e6a756 !important;
+  background-color: #00adb5 !important; /* Fondo turquesa */
 }
 
 .btn {
@@ -253,49 +267,49 @@ p {
 }
 
 .btn-primary {
-  background-color: #e6a756;
-  border-color: #e6a756;
+  background-color: #00adb5; /* Color turquesa para botones primarios */
+  border-color: #00adb5;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background-color: #df902a;
-  border-color: #df902a;
+  background-color: #00959c; /* Color turquesa más oscuro al interactuar */
+  border-color: #00959c;
 }
 
 .font-weight-light {
   font-weight: 100 !important;
 }
 
-.mbtm{
+.mbtm {
   padding-top: 5rem;
 }
 
-.mbt{
+.mbt {
   padding-top: 2rem;
 }
 
-.mbt1{
+.mbt1 {
   padding-top: 1.25rem;
 }
 
-a.link{
-  color: #df902a;
+a.link {
+  color: #00959c; /* Color turquesa para enlaces */
 }
 
-a.link:hover{
+a.link:hover {
   text-decoration: none;
-  color: #e6a756 !important;
+  color: #00adb5 !important; /* Color turquesa al pasar el mouse */
 }
 
-.section-content{
-  font-family: 'Lora' !important;
+.section-content {
+  font-family: 'Open Sans', sans-serif !important; /* Fuente moderna para contenido */
   font-size: 16px !important;
   font-weight: 400 !important;
   line-height: 28px !important;
 }
 
-ul.errorlist{
+ul.errorlist {
   padding-top: .75rem;
   font-style: italic;
-  color: red;
+  color: #ff6b6b; /* Color rojo suave para errores */
 }
